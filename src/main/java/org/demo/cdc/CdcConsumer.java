@@ -13,7 +13,9 @@ public class CdcConsumer {
 
     @Incoming("users_cdc")
     public void receive(Table usrsTblRec) {
-        log.info("CDC stream coming IN!! - " + usrsTblRec.getName());
+        if (usrsTblRec != null)
+          log.info("CDC stream coming IN!! - " + usrsTblRec.getName());
+        else System.out.println("Empty Message!");
 
     }
 
