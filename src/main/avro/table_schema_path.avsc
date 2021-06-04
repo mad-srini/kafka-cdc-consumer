@@ -1,0 +1,10 @@
+{
+  "type":"record",
+  "name":"Table",
+  "namespace":"org.yb.cdc.schema",
+  "fields":[
+  { "name":"name", "type":["null", "string"] },
+  { "name":"pass", "type":["null", "string"] },
+  { "name":"id", "type":["null", "int"] }
+  ]
+}

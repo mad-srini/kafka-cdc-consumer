@@ -1,0 +1,8 @@
+{
+  "type":"record",
+  "name":"PrimaryKey",
+  "namespace":"org.yb.cdc.schema",
+  "fields":[
+  { "name":"id", "type":["null", "int"] }
+  ]
+}
